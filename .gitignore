@@ -16,6 +16,11 @@ bin/
 # Go binary
 *.exe
 
+
+# env
+.env
+.env.*
+
 # Dependency directories
 /vendor/
 /Godeps/
