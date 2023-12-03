@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/Suman196pokhrel/go-jwt-auth/routes"
+	routes "github.com/Suman196pokhrel/go-jwt-auth/routes"
 	"github.com/gin-gonic/gin"
 )
 
