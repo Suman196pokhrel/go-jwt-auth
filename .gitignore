@@ -1,0 +1,26 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_vendor/
+bin/
+*.out
+
+# Specific files
+*.log
+.idea/
+.vscode/
+
+# Go binary
+*.exe
+
+# Dependency directories
+/vendor/
+/Godeps/
+/Godeps/Godeps.json
+/Godeps/_workspace/
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
