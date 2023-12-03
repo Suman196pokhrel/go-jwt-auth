@@ -1,7 +1,13 @@
 package routes
 
-import "github.com/gin-gonic/gin"
+import (
+	controller "github.com/Suman196pokhrel/go-jwt-auth/controllers"
+	"github.com/Suman196pokhrel/go-jwt-auth/middlewares"
+	"github.com/gin-gonic/gin"
+)
 
-func UserRoutes(r *gin.Engine) {
-
+func UserRoutes(routes *gin.Engine) {
+	routes.Use(middlewares.Authenticate)
+	routes.GET("/users", controller.GetUsers)
+	routes.GET("user/:user_id", controller.GetUser)
 }
